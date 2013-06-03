@@ -1,0 +1,273 @@
+﻿.awf-lookup-field, .awf-multilookup-field
+{
+    display: inline-block !important;
+}
+
+.awf-disabled .awf-lookup-display
+{
+    background: gainsboro;
+}
+.awf-lookup-field .awf-display
+{
+    display: inline-block;
+    list-style: none;    
+    margin: 0;
+    border: 1px solid #A6C9E2;
+    background: white;
+    width: 160px;    
+    *float:left;
+    padding: 0 5px;
+}
+
+.awf-multilookup-field .awf-display
+{
+    display: inline-block;
+    list-style: none;
+    padding: 3px;
+    margin: 0;
+    border: solid 1px #A6C9E2;
+    background: white;
+    width: 160px;
+    min-height: 18px;
+    *float:left; 
+}
+
+.awf-lookup-button,.awf-lookup-movebtn, .awf-lookup-searchbutton, .awf-list-buttons button {
+    background-color: #0078AE;
+    border: #77D5F7 solid 1px;
+    color: #fff;
+    font-weight: normal;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.awf-lookup-button:hover, .awf-lookup-movebtn:hover, .awf-lookup-searchbutton:hover, .awf-list-buttons button:hover
+{
+    background-color: #70bbdb;
+    border: #448DAE solid 1px;
+    color: #026890;
+}
+
+.awf-lookup-button:active, .awf-lookup-movebtn:active, .awf-lookup-searchbutton:active, .awf-list-buttons button:active
+{
+    border-color: #6EAC2C;
+    background-color: #6EAC2C;
+    color: white;
+}
+
+.awf-morebtn
+{
+    text-align: center;
+    cursor: pointer;
+    background: #F6F6F6;
+    color: white;
+    font-weight: bold;
+    padding: 9px;
+    margin: 3px;
+    border-radius: 3px;
+    border: #ccc solid 1px;
+    color: #026890;
+}
+.awf-morebtn:hover
+{
+    background-color: #70bbdb;
+    border: #448DAE solid 1px;
+    color: white;
+}
+
+.awf-list-item
+{
+    background-color: white;    
+    margin: 1px;
+    vertical-align: middle !important;
+    color: #026890;
+    font-weight: bold;
+}
+
+.awf-list-item:nth-child(even)
+{
+    background-color: #f7f7f7;
+}
+
+.awf-lookup-searchbutton
+{
+    margin: 3px;
+}
+
+.awf-lookup-button
+{
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    height: 25px;
+    width: 25px;
+    margin-right: 3px;
+    padding: 0;  
+    padding-bottom:3px;
+}
+
+.awf-list ul
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.awf-multilookup-popup .awf-list, .awf-lookup-popup .awf-list
+{
+    border-radius: 5px;
+    border: #A6C9E2 solid 1px;
+    overflow-y: scroll !important;
+}
+.awf-ajaxdropdown-field  select
+{
+    border: #A6C9E2 solid 1px;
+}
+.awf-lookup-searchlist
+{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.awf-lookup-movebtn
+{
+    cursor: pointer;
+    list-style: none outside none;
+    padding: 5px 2px;
+    vertical-align: middle;
+    margin: 3px;
+}
+
+.awf-lookup-movebtn span
+{
+    margin: 0 3px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    text-indent: -99999px;
+    background-image: url('awe_white.png');
+    background-position: -6px -6px;
+}
+
+.awf-lookup-selectedlist .awf-lookup-movebtn span
+{
+    background-position: -29px -6px;
+}
+
+.awf-fixed
+{
+    position: fixed !important;
+}
+
+.awf-loading
+{
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left: 5px;
+    width: 0px;
+    display: inline-block;
+}
+
+.awf-loading span
+{
+    background-image: url('loading.gif');
+    width: 16px;
+    height: 11px;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+
+
+.awf-lookup-selected
+{    
+    color: white;    
+    background-color: #55a52c !important;
+}
+
+.awf-lookup-popup .awf-list-item
+{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.awf-ajaxradiolist-field, .awf-ajaxcheckboxlist-field, .awf-ajaxdropdown-field
+{
+    display: inline-block;
+    vertical-align: top;
+}
+.awf-ajaxradiolist-field input, .awf-ajaxradiolist-field label, .awf-ajaxcheckboxlist-field label, .awf-ajaxcheckboxlist-field input
+{
+    cursor: pointer;
+    vertical-align: middle;
+}
+.awf-ajaxradiolist-field ul, .awf-ajaxcheckboxlist-field ul
+{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.awf-ajaxlist-field .awf-display {
+    border: #ccc solid 1px;
+    border-radius: 5px;
+}
+.awf-ajaxlist-field .awf-list-item
+{
+    padding: 5px;
+    margin: 1px 3px;
+    overflow: hidden;
+}
+
+.awf-list-buttons
+{
+    float: right;
+}
+
+.awf-list-buttons button
+{
+    cursor: pointer;
+    padding: 1px 7px;
+    margin:1px;
+}
+
+.ui-dialog {
+    opacity: 0.95;
+}
+
+.awf-lookup-openbutton
+{
+    background-image: url(awe_white.png);
+    background-repeat: no-repeat;
+    background-position: -2px -26px;
+    width: 25px;
+    height: 25px;
+}
+.awf-lookup-clearbutton
+{
+    background-image: url(awe_white.png);
+    background-repeat: no-repeat;
+    background-position: -26px -26px;
+    width: 25px;
+    height: 25px;
+ }
+ 
+.ui-dialog
+{
+    font-size: 15px !important;
+}
+
+.ui-dialog-titlebar
+{
+    font-size: small !important;
+}
+
+.ui-widget-header, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+{
+    background-image:none !important;
+}

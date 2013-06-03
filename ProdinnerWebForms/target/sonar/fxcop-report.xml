@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft fxcop 10.0\Xml\FxCopReport.xsl"?>
+<FxCopReport Version="10.0">
+ <Namespaces>
+  <Namespace Name="ProdinnerWebForms.svc">
+   <Messages>
+    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="Breaking">
+     <Issue Certainty="50" Level="Warning">Consider merging the types defined in 'ProdinnerWebForms.svc' with another namespace.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="C:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\bin\ProdinnerWebForms.dll">
+   <Modules>
+    <Module Name="prodinnerwebforms.dll">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'ProdinnerWebForms.dll' with a strong name key.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="ProdinnerWebForms">
+       <Types>
+        <Type Name="Chefs" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Delete(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Chefs.aspx.cs" Line="28">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'Chefs.Delete(object, EventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Edit(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Chefs.aspx.cs" Line="35">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'Chefs.Edit(object, EventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Chefs.aspx.cs" Line="37">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Chefs.Edit(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Save(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Chefs.aspx.cs" Line="20">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'Chefs.Save(object, EventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Countries" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Delete(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Countries.aspx.cs" Line="28">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'Countries.Delete(object, EventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Edit(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Countries.aspx.cs" Line="35">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'Countries.Edit(object, EventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Countries.aspx.cs" Line="37">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Countries.Edit(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Save(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Countries.aspx.cs" Line="20">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'Countries.Save(object, EventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Default" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Delete(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Default.aspx.cs" Line="36">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'Default.Delete(object, EventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Edit(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Default.aspx.cs" Line="43">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'Default.Edit(object, EventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Default.aspx.cs" Line="45">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Default.Edit(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Default.aspx.cs" Line="47">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Default.Edit(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Default.aspx.cs" Line="48">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Default.Edit(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Save(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Default.aspx.cs" Line="28">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'Default.Save(object, EventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.DateTime.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Default.aspx.cs" Line="22">Because the behavior of 'DateTime.Parse(string)' could vary based on the current user's locale settings, replace this call in 'Default.Save(object, EventArgs)' with a call to 'DateTime.Parse(string, IFormatProvider)'. If the result of 'DateTime.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Default.aspx.cs" Line="18">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Default.Save(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Default.aspx.cs" Line="19">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Default.Save(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Meals" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Delete(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Meals.aspx.cs" Line="28">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'Meals.Delete(object, EventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Edit(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Meals.aspx.cs" Line="35">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'Meals.Edit(object, EventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Meals.aspx.cs" Line="37">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Meals.Edit(object, EventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Save(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms" File="Meals.aspx.cs" Line="20">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'Meals.Save(object, EventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Site" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ContentPlaceHolder1" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="PlaceHolder" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'PlaceHolder' in member name 'Site.ContentPlaceHolder1' exists as a discrete term. If your usage is intended to be single word, case it as 'Placeholder' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="ProdinnerWebForms.Model">
+       <Types>
+        <Type Name="Db" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.cctor()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="InitializeReferenceTypeStaticFieldsInline" Category="Microsoft.Performance" CheckId="CA1810" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="CriticalWarning" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\Model" File="Db.cs" Line="10">Initialize all static fields in 'Db' when those fields are declared and remove the explicit static constructor.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Delete`1(System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\Model" File="Db.cs" Line="55">Consider a design where 'Db.Delete&lt;T&gt;(int)' doesn't require explicit type parameter 'T' in any call to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Set`1()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\Model" File="Db.cs" Line="20">Consider a design where 'Db.Set&lt;T&gt;()' doesn't require explicit type parameter 'T' in any call to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Tables" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalError">Consider a design where 'Db.Tables' doesn't nest generic type 'IDictionary&lt;Type, IList&lt;object&gt;&gt;'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="ProdinnerWebForms.svc">
+       <Types>
+        <Type Name="Aja" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ChefsDropdown(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dropdown" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeCompoundWord" Certainty="80" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\svc" File="Aja.svc.cs" Line="57">The discrete term 'Dropdown' in member name 'Aja.ChefsDropdown(string)' should be expressed as a compound word, 'DropDown'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\svc" File="Aja.svc.cs" Line="60">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Aja.ChefsDropdown(string)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CountryGet(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\svc" File="Aja.svc.cs" Line="75">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Aja.CountryGet(string)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DinnersSearch(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Boolean,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\svc" File="Aja.svc.cs" Line="174">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Aja.DinnersSearch(string, string, string, string, int, int, bool, string)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.String.Format(System.String,System.Object[])" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\svc" File="Aja.svc.cs" Line="201">Because the behavior of 'string.Format(string, params object[])' could vary based on the current user's locale settings, replace this call in 'Aja.DinnersSearch(string, string, string, string, int, int, bool, string)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MealSelected(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\svc" File="Aja.svc.cs" Line="50">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Aja.MealSelected(string)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MealsSearch(System.String,System.String,System.Int32,System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2013-05-27 20:03:43Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\svc" File="Aja.svc.cs" Line="140">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'Aja.MealsSearch(string, string, int, bool)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020">
+   <Name>Avoid namespaces with few types</Name>
+   <Description>A namespace should generally have more than five types.</Description>
+   <Resolution Name="Default">Consider merging the types defined in '{0}' with another namespace.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182130(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
+   <Name>Compound words should be cased correctly</Name>
+   <Description>Avoid creating compound words from terms which exist in the dictionary as discrete terms. Do not create a compound word such as 'StopWatch' or 'PopUp'. These terms are recognized in the dictionary and should be cased as 'Stopwatch' and 'Popup'.</Description>
+   <Resolution Name="MemberShouldBeCompoundWord">The discrete term '{0}' in member name {1} should be expressed as a compound word, '{2}'.</Resolution>
+   <Resolution Name="MemberShouldBeDiscreteTerm">The compound word '{0}' in member name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}' or strip the first token entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264474(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="80">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006">
+   <Name>Do not nest generic types in member signatures</Name>
+   <Description>Avoid API that require users to instantiate a generic type with another generic type as type argument. The syntax gets too complex.</Description>
+   <Resolution Name="Default">Consider a design where {0} doesn't nest generic type {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182144(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004">
+   <Name>Generic methods should provide type parameter</Name>
+   <Description>Methods where the type parameter cannot be inferred from the parameters and therefore has to be defined in the method call are too difficult to understand. Methods with a formal parameter typed as the generic method type parameter support inference. Methods with no formal parameter typed as the generic method type parameter don't support inference.</Description>
+   <Resolution Name="Default">Consider a design where {0} doesn't require explicit type parameter {1} in any call to it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182150(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="DesignRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="InitializeReferenceTypeStaticFieldsInline" Category="Microsoft.Performance" CheckId="CA1810">
+   <Name>Initialize reference type static fields inline</Name>
+   <Description>Static fields should be initialized when declared. Initializing static data in explicit static constructors results in less performant code.</Description>
+   <Resolution Name="Default">Initialize all static fields in {0} when those fields are declared and remove the explicit static constructor.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182275(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">CriticalWarning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Specify IFormatProvider</Name>
+   <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternate">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be based on input from the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify {4}.</Resolution>
+   <Resolution Name="IFormatProviderAlternateString">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="10.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

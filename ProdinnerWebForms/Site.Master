@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ProdinnerWebForms.Site" %>
+<%@ Import Namespace="ProdinnerWebForms" %>
+<%@ Import Namespace="Resources" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <link href="<%=ResolveUrl("~/Content/o.css") %>" rel="stylesheet" />
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/start/jquery-ui.css"
+        rel="stylesheet" />
+    <link href="<%=ResolveUrl("~/Content/AwesomeWebFormsStart.css") %>" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="<%=ResolveUrl("~/Scripts/json2.min.js") %>"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="<%=ResolveUrl("~/Scripts/AwesomeWebForms.js") %>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/Scripts/o.js") %>"></script>    
+    <% if(La !="en"){%>
+    <script type="text/javascript" src="http://jquery-ui.googlecode.com/svn/trunk/ui/i18n/jquery.ui.datepicker-<%=La %>.js"></script>    
+    <%} %>
+    
+    <script type="text/javascript">
+        $(function() { 
+        $(".dt").datepicker({ dateFormat: "<%=DateHelper.ConvertDateFormat() %>"});
+        });
+</script>
+</head>
+<body>
+    <noscript>
+        <div id="nos">
+            this site works best with javascript enabled
+        </div>
+    </noscript>
+    <form id="form1" runat="server">
+    <div id="header">
+        <ul class="menu" style="margin-left: 30px;">
+            <li style="padding: 0;">
+            <a href="<%=ResolveUrl("~/default.aspx") %>" style="padding:0;">
+                <img src='<%=ResolveUrl("~/Content/o.png") %>' alt='logo' id="so" /></a>
+                </li>
+            <li><a href="<%=ResolveUrl("~/default.aspx") %>"><%=Mui.Home %></a></li>
+            <li><a href="<%=ResolveUrl("~/meals.aspx") %>"><%=Mui.Meals %></a></li>
+            <li><a href="<%=ResolveUrl("~/countries.aspx") %>"><%=Mui.Countries %></a></li>
+            <li><a href="<%=ResolveUrl("~/chefs.aspx") %>"><%=Mui.Chefs %></a></li>
+            <li><a href="<%=ResolveUrl("~/about.aspx") %>"><%=Mui.About %></a></li>
+        </ul>
+        <div class="fr" style="margin:10px 10px 0 0">Language:
+        <asp:DropDownList runat="server" OnSelectedIndexChanged="LangChange" ID="Lang" AutoPostBack="true">        
+        </asp:DropDownList>
+        </div>
+    </div>
+    <div id="main">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="footer">
+    </div>
+    </form>
+</body>
+</html>

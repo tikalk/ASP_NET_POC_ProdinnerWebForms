@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies name="ProdinnerWebForms" version="1.0.0.0">
+  <Assembly name="ProdinnerWebForms" version="1.0.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Web" fullName="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="Omu.AwesomeWebForms" fullName="Omu.AwesomeWebForms, Version=1.0.3.0, Culture=neutral, PublicKeyToken=e8b65a0968999f7e" version="1.0.3.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="3.5.0.0" />
+      <Reference name="Omu.ValueInjecter" fullName="Omu.ValueInjecter, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null" version="2.3.0.0" />
+      <Reference name="System.ServiceModel" fullName="System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.ServiceModel.Web" fullName="System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="4.0.0.0" />
+      <Reference name="mscorlib" fullName="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="2.0.0.0" />
+    </References>
+    <TypeReferences>
+      <From fullname="ProdinnerWebForms.Chefs" path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\Chefs.aspx.cs">
+        <To fullname="Omu.AwesomeWebForms.AjaxList" assemblyname="Omu.AwesomeWebForms" assemblyversion="1.0.3.0" />
+        <To fullname="ProdinnerWebForms.Model.Chef" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="ProdinnerWebForms.Default" path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\Default.aspx.cs">
+        <To fullname="Omu.AwesomeWebForms.AjaxDropdown" assemblyname="Omu.AwesomeWebForms" assemblyversion="1.0.3.0" />
+        <To fullname="Omu.AwesomeWebForms.Lookup" assemblyname="Omu.AwesomeWebForms" assemblyversion="1.0.3.0" />
+        <To fullname="Omu.AwesomeWebForms.MultiLookup" assemblyname="Omu.AwesomeWebForms" assemblyversion="1.0.3.0" />
+        <To fullname="Omu.AwesomeWebForms.AjaxRadioList" assemblyname="Omu.AwesomeWebForms" assemblyversion="1.0.3.0" />
+        <To fullname="Omu.AwesomeWebForms.AjaxList" assemblyname="Omu.AwesomeWebForms" assemblyversion="1.0.3.0" />
+        <To fullname="ProdinnerWebForms.Model.Meal" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+        <To fullname="ProdinnerWebForms.Model.Chef" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+        <To fullname="ProdinnerWebForms.Model.Country" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+        <To fullname="ProdinnerWebForms.Model.Dinner" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="ProdinnerWebForms.Meals" path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\Meals.aspx.cs">
+        <To fullname="Omu.AwesomeWebForms.AjaxList" assemblyname="Omu.AwesomeWebForms" assemblyversion="1.0.3.0" />
+        <To fullname="ProdinnerWebForms.Model.Meal" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="ProdinnerWebForms.Countries" path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\Countries.aspx.cs">
+        <To fullname="Omu.AwesomeWebForms.AjaxList" assemblyname="Omu.AwesomeWebForms" assemblyversion="1.0.3.0" />
+        <To fullname="ProdinnerWebForms.Model.Country" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="ProdinnerWebForms.Model.Chef">
+        <To fullname="ProdinnerWebForms.Model.Entity" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+        <To fullname="ProdinnerWebForms.Model.Country" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="ProdinnerWebForms.Model.Country">
+        <To fullname="ProdinnerWebForms.Model.Entity" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="ProdinnerWebForms.Model.Meal">
+        <To fullname="ProdinnerWebForms.Model.Entity" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="ProdinnerWebForms.Model.Dinner">
+        <To fullname="ProdinnerWebForms.Model.Entity" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+        <To fullname="ProdinnerWebForms.Model.Chef" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+        <To fullname="ProdinnerWebForms.Model.Country" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+        <To fullname="ProdinnerWebForms.Model.Meal" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="ProdinnerWebForms.Model.Db" path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\Model\Db.cs">
+        <To fullname="ProdinnerWebForms.Model.Country" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+        <To fullname="ProdinnerWebForms.Model.Chef" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+        <To fullname="ProdinnerWebForms.Model.Meal" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+        <To fullname="ProdinnerWebForms.Model.Dinner" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+        <To fullname="T" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="ProdinnerWebForms.svc.Aja" path="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\svc\Aja.svc.cs">
+        <To fullname="ProdinnerWebForms.Model.Meal" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+        <To fullname="Omu.AwesomeWebForms.KeyContent" assemblyname="Omu.AwesomeWebForms" assemblyversion="1.0.3.0" />
+        <To fullname="ProdinnerWebForms.Model.Country" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+        <To fullname="ProdinnerWebForms.Model.Chef" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+        <To fullname="ProdinnerWebForms.Model.Dinner" assemblyname="ProdinnerWebForms" assemblyversion="1.0.0.0" />
+        <To fullname="Omu.AwesomeWebForms.LookupResult" assemblyname="Omu.AwesomeWebForms" assemblyversion="1.0.3.0" />
+        <To fullname="Omu.AwesomeWebForms.SelectListItem" assemblyname="Omu.AwesomeWebForms" assemblyversion="1.0.3.0" />
+      </From>
+    </TypeReferences>
+    <Design>
+      <type fullName="Resources.Mui" source="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\App_GlobalResources\Mui.Designer.cs" rfc="0" dit="1" />
+      <type fullName="ProdinnerWebForms.Chefs" source="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\Chefs.aspx.cs" rfc="18" dit="4">
+        <block>
+          <element type="Field" name="eFirstName" />
+          <element type="Field" name="eId" />
+          <element type="Field" name="eLastName" />
+          <element type="Field" name="jsArg" />
+          <element type="Field" name="Msg" />
+          <element type="Field" name="ShowForm" />
+          <element type="Method" name="System.Void Delete(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void Edit(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void Save(System.Object, System.EventArgs)" />
+        </block>
+      </type>
+      <type fullName="ProdinnerWebForms.DateHelper" source="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\DateHelper.cs" rfc="7" dit="1" />
+      <type fullName="ProdinnerWebForms.Default" source="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\Default.aspx.cs" rfc="30" dit="4">
+        <block>
+          <element type="Field" name="eChef" />
+          <element type="Field" name="eCountry" />
+          <element type="Field" name="eDate" />
+          <element type="Field" name="eId" />
+          <element type="Field" name="eMeals" />
+          <element type="Field" name="eName" />
+          <element type="Field" name="jsArg" />
+          <element type="Field" name="Msg" />
+          <element type="Field" name="ShowForm" />
+          <element type="Method" name="System.Void Delete(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void Edit(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void Save(System.Object, System.EventArgs)" />
+        </block>
+      </type>
+      <type fullName="ProdinnerWebForms.Global" source="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\Global.asax.cs" rfc="19" dit="2">
+        <block>
+          <element type="Method" name="System.Void Application_Start(System.Object, System.EventArgs)" />
+        </block>
+        <block>
+          <element type="Method" name="System.Void Application_BeginRequest(System.Object, System.EventArgs)" />
+        </block>
+      </type>
+      <type fullName="ProdinnerWebForms.Meals" source="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\Meals.aspx.cs" rfc="18" dit="4">
+        <block>
+          <element type="Field" name="eDescription" />
+          <element type="Field" name="eId" />
+          <element type="Field" name="eName" />
+          <element type="Field" name="jsArg" />
+          <element type="Field" name="Msg" />
+          <element type="Field" name="ShowForm" />
+          <element type="Method" name="System.Void Delete(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void Edit(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void Save(System.Object, System.EventArgs)" />
+        </block>
+      </type>
+      <type fullName="ProdinnerWebForms.Countries" source="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\Countries.aspx.cs" rfc="18" dit="4">
+        <block>
+          <element type="Field" name="eId" />
+          <element type="Field" name="eName" />
+          <element type="Field" name="jsArg" />
+          <element type="Field" name="Msg" />
+          <element type="Field" name="ShowForm" />
+          <element type="Method" name="System.Void Delete(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void Edit(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void Save(System.Object, System.EventArgs)" />
+        </block>
+      </type>
+      <type fullName="ProdinnerWebForms.Model.Db" source="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\Model\Db.cs" rfc="178" dit="1" />
+      <type fullName="ProdinnerWebForms.Site" source="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\Site.Master.cs" rfc="25" dit="5">
+        <block>
+          <element type="Field" name="La" />
+          <element type="Field" name="Lang" />
+          <element type="Method" name="System.Void LangChange(System.Object, System.EventArgs)" />
+          <element type="Method" name="System.Void Page_Load(System.Object, System.EventArgs)" />
+        </block>
+      </type>
+      <type fullName="ProdinnerWebForms.svc.Aja" source="c:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\svc\Aja.svc.cs" rfc="83" dit="1">
+        <block>
+          <element type="Method" name="System.Collections.Generic.IEnumerable`1&lt;Omu.AwesomeWebForms.KeyContent&gt; MealGetMultiple(System.String)" />
+        </block>
+        <block>
+          <element type="Method" name="Omu.AwesomeWebForms.LookupResult MealSearch(System.String, System.String, System.Int32)" />
+        </block>
+        <block>
+          <element type="Method" name="System.Collections.Generic.IEnumerable`1&lt;Omu.AwesomeWebForms.KeyContent&gt; MealSelected(System.String)" />
+        </block>
+        <block>
+          <element type="Method" name="System.Collections.Generic.IEnumerable`1&lt;Omu.AwesomeWebForms.SelectListItem&gt; ChefsDropdown(System.String)" />
+        </block>
+        <block>
+          <element type="Method" name="Omu.AwesomeWebForms.KeyContent CountryGet(System.String)" />
+        </block>
+        <block>
+          <element type="Method" name="Omu.AwesomeWebForms.LookupResult CountriesSearch(System.String, System.Int32, System.Boolean)" />
+        </block>
+        <block>
+          <element type="Method" name="Omu.AwesomeWebForms.LookupResult ChefsSearch(System.String, System.Int32, System.Boolean)" />
+        </block>
+        <block>
+          <element type="Method" name="Omu.AwesomeWebForms.LookupResult MealsSearch(System.String, System.String, System.Int32, System.Boolean)" />
+        </block>
+        <block>
+          <element type="Method" name="Omu.AwesomeWebForms.LookupResult DinnersSearch(System.String, System.String, System.String, System.String, System.Int32, System.Int32, System.Boolean, System.String)" />
+        </block>
+        <block>
+          <element type="Method" name="System.Collections.Generic.IEnumerable`1&lt;Omu.AwesomeWebForms.SelectListItem&gt; AscDesc(System.String)" />
+        </block>
+      </type>
+      <type fullName="&lt;Module&gt;" source="" rfc="0" dit="0" />
+      <type fullName="ProdinnerWebForms.About" source="" rfc="1" dit="4" />
+      <type fullName="ProdinnerWebForms.Model.Entity" source="" rfc="1" dit="1" />
+      <type fullName="ProdinnerWebForms.Model.Chef" source="" rfc="1" dit="2" />
+      <type fullName="ProdinnerWebForms.Model.Country" source="" rfc="1" dit="2" />
+      <type fullName="ProdinnerWebForms.Model.Meal" source="" rfc="1" dit="2" />
+      <type fullName="ProdinnerWebForms.Model.Dinner" source="" rfc="1" dit="2" />
+    </Design>
+  </Assembly>
+  <Assembly name="Omu.AwesomeWebForms" version="1.0.3.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="2.0.0.0" />
+      <Reference name="System.Web" fullName="System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="2.0.0.0" />
+      <Reference name="System" fullName="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="2.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="3.5.0.0" />
+      <Reference name="System.Web.Extensions" fullName="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="3.5.0.0" />
+    </References>
+  </Assembly>
+  <Assembly name="Omu.ValueInjecter" version="2.3.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="2.0.0.0" />
+      <Reference name="System" fullName="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="2.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="3.5.0.0" />
+    </References>
+  </Assembly>
+</Dependencies>

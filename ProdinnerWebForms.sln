@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProdinnerWebForms", "ProdinnerWebForms\ProdinnerWebForms.csproj", "{B55E7482-719E-409C-B713-EBD9FE896C9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{561F5B91-7669-432C-A4BA-DDD16D6553F3}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProdinnerWebForms.Tests", "ProdinnerWebForms.Tests\ProdinnerWebForms.Tests.csproj", "{83C18D0F-3967-4B2F-B3D3-ED1716DDDDD8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0FB61A0C-BABF-454C-96C6-446EF233C4C7}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		ProdinnerWebForms.vsmdi = ProdinnerWebForms.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ProdinnerWebForms.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B55E7482-719E-409C-B713-EBD9FE896C9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B55E7482-719E-409C-B713-EBD9FE896C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B55E7482-719E-409C-B713-EBD9FE896C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B55E7482-719E-409C-B713-EBD9FE896C9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83C18D0F-3967-4B2F-B3D3-ED1716DDDDD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83C18D0F-3967-4B2F-B3D3-ED1716DDDDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83C18D0F-3967-4B2F-B3D3-ED1716DDDDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83C18D0F-3967-4B2F-B3D3-ED1716DDDDD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

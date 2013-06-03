@@ -1,0 +1,228 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body
+{
+    font-family: "Segoe UI" , Helvetica, Arial, sans-serif, serif;
+}
+
+a
+{
+    font-family: Helvetica;
+    color: #026890;
+}
+
+button, input[type="submit"], a
+{
+    cursor: pointer;
+}
+
+fieldset
+{
+    border: solid 1px gainsboro;
+    padding: 1em;
+    border-radius: 3px;
+    margin: 3px;
+}
+
+.fl
+{
+    float: left;
+}
+
+.fr
+{
+    float: right;
+}
+
+.inputform
+{
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin-top: 1em;
+    padding: 1em;
+}
+.efield textarea, .efield input[type="text"]
+{
+    width: 271px;
+}
+.efield select
+{
+    width: 277px;
+}
+.efield
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.elabel
+{
+    width: 200px;
+    display: inline-block; 
+    *display:inline;
+vertical-align:top;
+text-align:right;
+}
+.einput
+{
+    display: inline-block;
+}
+.ebtns
+{
+    padding-left: 203px;
+}
+
+.sfield
+{
+    display: inline-block; 
+    *display:inline;
+vertical-align:top;
+}
+
+.topmenu
+{
+    padding: 5px 0;
+}
+#main
+{
+    padding: 0 30px 15px 30px;
+    overflow: auto;
+}
+.menu
+{
+    display: inline-block;
+}
+
+.menu li
+{
+    display: inline-block; *display:inline;
+font-size:18px;
+vertical-align:middle;
+padding:10px 0;
+}
+.menu a
+{
+    padding: 10px 7px;
+    text-decoration: none;
+}
+
+.menu a:hover
+{
+    background: #E5ECF9;
+}
+#header
+{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: #E5ECF9 solid 1px;
+}
+.dinnersList .awf-display
+{
+    border: none !important;
+}
+
+.dinnersList .awf-list-item
+{
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    margin: 8px 3px !important;
+    padding: 3px 7px !important;
+}
+.mealsList .awf-list-item
+{
+    float: left;
+    width: 300px;
+    height: 175px;
+    padding: 20px;
+    border: 1px solid gainsboro;
+    margin: 3px !important;
+}
+
+.mealsList .awf-morebtn
+{
+    float: left;
+    width: 300px;
+    padding: 81px 5px;
+}
+
+.mealsList .awf-display
+{
+    border: none !important;
+}
+.description
+{
+    height: 123px;
+    overflow: auto;
+}
+
+.msg
+{
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 7px 17px;
+}
+
+.bt
+{
+    text-align: center;
+    cursor: pointer;
+    background: #F6F6F6;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+    margin: 3px;
+    border-radius: 3px;
+    border: #ccc solid 1px;
+    color: #026890;
+}
+.bt:hover
+{
+    background-color: #70bbdb;
+    border: #448DAE solid 1px;
+    color: white;
+}
+
+.bt:active
+{
+    border-color: #6EAC2C;
+    background-color: #6EAC2C;
+    color: white;
+}
+
+.efield .awf-lookup-field .awf-display
+{
+    width: 236px !important;
+}
+
+.efield .awf-multilookup-field .awf-display
+{
+    width: 240px !important;
+}
+
+.bedit
+{
+    background-image: url(edit.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+}
+
+.bdel
+{
+    background-image: url(del.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+}
+
+.hli li
+{
+    display: inline-block;
+}

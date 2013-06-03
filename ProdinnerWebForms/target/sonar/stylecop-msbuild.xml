@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="StyleCopLaunch" ToolsVersion="3.5">
+    <PropertyGroup>
+        <ProjectRoot>C:\Users\gil\Desktop\ProdinnerWebForms</ProjectRoot>
+        <StyleCopRoot>C:\Users\gil\Desktop\ProdinnerWebForms\target\sonar\StyleCop-4.7.34.0</StyleCopRoot>
+    </PropertyGroup>
+    <UsingTask TaskName="StyleCopTask" AssemblyFile="$(StyleCopRoot)\StyleCop.dll"></UsingTask>
+    <ItemGroup>
+        <Project Include="C:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\ProdinnerWebForms.csproj"></Project>
+    </ItemGroup>
+    <Target Name="StyleCopLaunch">
+        <CreateItem Include="%(Project.RootDir)%(Project.Directory)**\*.cs">
+            <Output ItemName="SourceAnalysisFiles" TaskParameter="Include"></Output>
+        </CreateItem>
+        <StyleCopTask MaxViolationCount="-1" OverrideSettingsFile="C:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\target\sonar\sonar.StyleCop"
+            OutputFile="C:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms\target\sonar\stylecop-report.xml"
+            TreatErrorsAsWarnings="true" ForceFullAnalysis="true"
+            SourceFiles="@(SourceAnalysisFiles);@(CSFile)"
+            ProjectFullPath="C:\Users\gil\Desktop\ProdinnerWebForms\ProdinnerWebForms.sln"></StyleCopTask>
+    </Target>
+</Project>
